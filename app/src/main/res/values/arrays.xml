@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="images">
+        <item>@drawable/bg</item>
+        <item>@drawable/bg1</item>
+        <item>@drawable/bg2</item>
+        <item>@drawable/bg3</item>
+        <item>@drawable/bg1</item>
+    </array>
+
+</resources>

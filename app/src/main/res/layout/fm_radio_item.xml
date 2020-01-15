@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:id="@+id/rl_fm_radio_item"
+    android:padding="@dimen/one"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/ll_fm_radio_item_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:id="@+id/ll_fm_radio_item_Img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_fm_radio_item"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/music_ab" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fm_radio_item_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txt_fm_radio_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/three"
+                android:text="Title1"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/eighteen" />
+
+            <TextView
+                android:id="@+id/txt_fm_radio_item_stationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/three"
+                android:text="Title2"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/eighteen" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

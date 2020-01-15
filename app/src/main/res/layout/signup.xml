@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Sign_Up.SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleView_logo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            />
+
+        <EditText
+            android:id="@+id/edt_sign_up_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:inputType="text"
+            android:background="@drawable/email"
+            android:drawableLeft="@drawable/username"
+            android:drawablePadding="10dp"
+            android:hint="Full Name"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorWhite"/>
+        <EditText
+            android:id="@+id/edt_sign_up_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:inputType="text"
+            android:background="@drawable/email"
+            android:drawableLeft="@drawable/gmail"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorWhite"/>
+
+        <EditText
+            android:id="@+id/edt_sign_up_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:focusable="false"
+            android:background="@drawable/email"
+            android:drawableLeft="@drawable/dob"
+            android:drawablePadding="10dp"
+            android:hint="D.O.B"
+            android:inputType="date"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorWhite"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/AppTheme"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:background="@drawable/email">
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/cardview_light_background"
+                    android:text="Male"/>
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/cardview_light_background"
+                    android:text="Female"/>
+                <RadioButton
+                    android:id="@+id/radio_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:text="Other"/>
+            </RadioGroup>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edt_sign_up_mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/email"
+            android:drawableLeft="@drawable/mobile"
+            android:drawablePadding="10dp"
+            android:hint="Mobile No"
+            android:inputType="number"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorWhite"/>
+        <EditText
+            android:id="@+id/edt_sign_up_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:inputType="text"
+            android:background="@drawable/email"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorWhite"/>
+        <EditText
+            android:id="@+id/edt_sign_up_cnf_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:inputType="text"
+            android:background="@drawable/email"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="10dp"
+            android:hint="Confirm Password"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorWhite"/>
+
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            style="@style/AppTheme"
+            android:textStyle="bold"
+            android:shadowColor="@android:color/transparent"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/login"/>
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            style="@style/AppTheme"
+            android:textStyle="bold"
+            android:shadowColor="@android:color/transparent"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/signup"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

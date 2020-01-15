@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin"
+        android:gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:padding="10dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/logo"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TableRow
+                android:padding="10dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Name:"
+                   android:textAlignment="textStart"
+                   android:textStyle="bold"
+                   android:textSize="16dp"
+                   android:textColor="@color/cardview_dark_background"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    android:textAlignment="textStart"
+                    android:textStyle="normal"
+                    android:textSize="16dp"
+                    android:textColor="@color/cardview_dark_background"/>
+
+            </TableRow>
+            <TableRow
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Id:"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/cardview_dark_background"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="zyx@gmail.com"
+                    android:textAlignment="textStart"
+                    android:textStyle="normal"
+                    android:textSize="16dp"
+                    android:textColor="@color/cardview_dark_background"/>
+
+            </TableRow>
+            <TableRow android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Of Birth:"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/cardview_dark_background"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="04/08/2004"
+                    android:textAlignment="textStart"
+                    android:textStyle="normal"
+                    android:textSize="16dp"
+                    android:textColor="@color/cardview_dark_background"/>
+
+            </TableRow>
+            <TableRow
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender:"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/cardview_dark_background"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Male"
+                    android:textAlignment="textStart"
+                    android:textStyle="normal"
+                    android:textSize="16dp"
+                    android:textColor="@color/cardview_dark_background"/>
+
+            </TableRow>
+            <TableRow
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No:"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/cardview_dark_background"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="9876543210"
+                    android:textAlignment="textStart"
+                    android:textStyle="normal"
+                    android:textSize="16dp"
+                    android:textColor="@color/cardview_dark_background"/>
+
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+            <TableRow
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/cardview_light_background"
+                    android:text="Update"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:background="@drawable/signup"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:text="Cancel"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:background="@drawable/signup"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
